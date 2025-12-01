@@ -1,0 +1,149 @@
+:root {
+    --bs-body-bg: #F5F7FA;
+    --bs-body-color: #2E3A45;
+
+    /* Card & Glass */
+    --bs-card-bg: rgba(255, 255, 255, 0.55);
+    --bs-card-border: rgba(255, 255, 255, 0.3);
+    --bs-card-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+    /* Primary Color */
+    --bs-primary: #1565C0;
+    --bs-primary-rgb: 21, 101, 192;
+
+    /* Accent */
+    --bs-accent: #26C6DA;
+    --bs-accent-rgb: 38, 198, 218;
+
+    --bs-card-bg-rgb-glass: 255, 255, 255;
+
+    /* GRADIENT LIGHT */
+    --gradient-light-start: #F0F4FF;
+    --gradient-light-end: #FFFFFF;
+
+    /* BACKGROUND IMAGE — JANGAN DIUBAH */
+    --bg-image-light: url('../assets/images/weather-bg-blur-light.jpg');
+    --bg-image-dark: url('../assets/images/weather-bg-blur-dark.jpg');
+}
+
+
+/* =========================================================
+   DARK MODE (lebih glowing, modern, premium)
+   ========================================================= */
+.dark-mode {
+    --bs-body-bg: #0F172A;
+    --bs-body-color: #E2E8F0;
+
+    --bs-card-bg: rgba(30, 41, 59, 0.55);
+    --bs-card-border: rgba(255, 255, 255, 0.08);
+    --bs-card-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+    --bs-primary: #60A5FA;
+    --bs-primary-rgb: 96, 165, 250;
+
+    --bs-accent: #5EEAD4;
+    --bs-accent-rgb: 94, 234, 212;
+
+    --gradient-dark-start: #1E293B;
+    --gradient-dark-end: #0F172A;
+
+    --bs-card-bg-rgb-glass: 30, 41, 59;
+}
+
+
+/* =========================================================
+   GLASS CARD NEW STYLE
+   ========================================================= */
+.card {
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    background-color: var(--bs-card-bg);
+    border: 1px solid var(--bs-card-border);
+    border-radius: 22px;
+    box-shadow: var(--bs-card-shadow);
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.15);
+}
+
+
+/* =========================================================
+   FORM CONTROL (lebih modern)
+   ========================================================= */
+.form-control {
+    background-color: rgba(var(--bs-card-bg-rgb-glass), 0.35) !important;
+    border: 1px solid rgba(var(--bs-card-bg-rgb-glass), 0.4) !important;
+    border-radius: 14px;
+    color: var(--bs-body-color) !important;
+    transition: 0.3s ease-in-out;
+    backdrop-filter: blur(12px);
+}
+
+.form-control:focus {
+    background-color: rgba(var(--bs-card-bg-rgb-glass), 0.55) !important;
+    border-color: var(--bs-primary) !important;
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), .22) !important;
+}
+
+.dark-mode .form-control {
+    background-color: rgba(var(--bs-card-bg-rgb-glass), 0.25) !important;
+    border-color: rgba(255,255,255,0.2) !important;
+}
+
+
+/* =========================================================
+   LIST GROUP
+   ========================================================= */
+.list-group-item {
+    backdrop-filter: blur(12px);
+    transition: 0.25s ease;
+    background-color: rgba(var(--bs-card-bg-rgb-glass), 0.25) !important;
+    color: var(--bs-body-color) !important;
+    border: none !important;
+}
+
+.list-group-item:hover {
+    background-color: rgba(var(--bs-primary-rgb), 0.18) !important;
+}
+
+
+/* =========================================================
+   ALERT STYLE – lebih soft & clean
+   ========================================================= */
+.alert.alert-info {
+    background: linear-gradient(
+        to right,
+        rgba(var(--bs-accent-rgb), 0.15),
+        rgba(var(--bs-accent-rgb), 0.25)
+    );
+    border-left: 5px solid var(--bs-accent);
+    border-radius: 14px;
+    backdrop-filter: blur(12px);
+    color: var(--bs-body-color);
+}
+
+.dark-mode .alert.alert-info {
+    background: rgba(var(--bs-primary-rgb), 0.16);
+    border-left: 5px solid var(--bs-primary);
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+.dark-mode .btn-outline-dark,
+.dark-mode .btn-outline-secondary {
+    color: var(--bs-body-color) !important;
+    border-color: var(--bs-body-color) !important;
+    transition: 0.3s ease;
+}
+
+.dark-mode .btn-outline-dark:hover,
+.dark-mode .btn-outline-secondary:hover {
+    background-color: var(--bs-primary);
+    color: #0F172A !important;
+    border-color: var(--bs-primary) !important;
+}
