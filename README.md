@@ -1,6 +1,6 @@
-# 🌦️ **Weather Dashboard — PPW 6**
+# 🌦️ **Weather Dashboard — TA PPW 6**
 
-Aplikasi *Weather Dashboard* ini dibuat sebagai tugas akhir mata kuliah **Praktikum Pemrograman Web 6 (PPW 6)**.
+Aplikasi *Weather Dashboard* ini dibuat sebagai tugas akhir mata kuliah **Praktikum Pemrograman Web**.
 Aplikasi ini menampilkan cuaca saat ini, prakiraan 5 hari, pencarian kota, daftar kota favorit, dan mode tema (light/dark) dengan tampilan antarmuka modern.
 
 ---
