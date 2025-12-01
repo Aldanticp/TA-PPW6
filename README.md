@@ -88,10 +88,6 @@ project/
     ├── images/
     │   ├── weather-bg-blur-light.jpg
     │   └── weather-bg-blur-dark.jpg
-    └── screenshots/
-        ├── light-mode.jpg
-        ├── dark-mode.jpg
-        └── ...
 ```
 
 ---
