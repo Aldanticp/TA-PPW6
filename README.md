@@ -92,16 +92,6 @@ project/
 
 ---
 
-## 🔑 **Konfigurasi API**
-
-Buat file **config.js**:
-
-```js
-export const API_KEY = "MASUKKAN_API_KEY_MILIKMU";
-```
-
----
-
 ## ▶️ **Cara Menjalankan**
 
 1. Clone repo
